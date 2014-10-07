@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Norenportland</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Noren Portland</h1>
+<ul>
+
+
+ <li><%= link_to 'EAT', 'eat_index_path' %></li>
+ <li><%= link_to 'SHOP', 'shop_index_path' %></li>
+ <li><%= link_to 'SPOT', 'spot_index_path' %></li>
+ <li><%= link_to 'ENJOY', 'enjoy_index_path' %></li>
+ <li><%= link_to 'OTHER', 'other_index_path' %></li>
+
+</ul>
+
+
+<%= yield %>
+
+</body>
+</html>
